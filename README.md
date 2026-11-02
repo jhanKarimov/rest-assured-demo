@@ -6,7 +6,7 @@ Honest note: this is a portfolio demo. It runs against [JSONPlaceholder](https:/
 
 ## What's in it
 
-- 20 test cases (some are data-driven) covering status codes, JSON-path shape checks, POJO deserialization, headers, filter and pagination queries, nested resources, create/replace/patch/delete, negative cases (404, wrong method), a soft response-time budget, and JSON Schema contract tests.
+- 18 test methods (25 executed cases with the data providers) covering status codes, JSON-path shape checks, POJO deserialization, headers, filter and pagination queries, nested resources, create/replace/patch/delete, negative cases (404, wrong method), a soft response-time budget, and JSON Schema contract tests.
 - Test groups: `smoke`, `regression`, `negative`, `contract`.
 - Retry for flaky network: a TestNG `IRetryAnalyzer` (max 2 retries) attached to every test through an `IAnnotationTransformer` listener.
 - Parallel execution: Surefire runs test methods on 4 threads. The client is stateless, so that's safe.
